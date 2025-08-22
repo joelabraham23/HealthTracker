@@ -12,6 +12,8 @@
 		2C53641C2E5834FF0020A84B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53641B2E5834FF0020A84B /* Persistence.swift */; };
 		2C53641F2E5834FF0020A84B /* HealthTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C53641D2E5834FF0020A84B /* HealthTracker.xcdatamodeld */; };
 		2C5364552E583B650020A84B /* DailyMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5364542E583B650020A84B /* DailyMetrics.swift */; };
+		2C5364572E58460F0020A84B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5364562E58460F0020A84B /* DashboardView.swift */; };
+		2C5364592E58485F0020A84B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5364582E58485F0020A84B /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		2C5364242E5835000020A84B /* HealthTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C53642E2E5835000020A84B /* HealthTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5364542E583B650020A84B /* DailyMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMetrics.swift; sourceTree = "<group>"; };
+		2C5364562E58460F0020A84B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		2C5364582E58485F0020A84B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -169,6 +173,8 @@
 		2C53644E2E583A5E0020A84B /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				2C5364562E58460F0020A84B /* DashboardView.swift */,
+				2C5364582E58485F0020A84B /* MainTabView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -352,8 +358,10 @@
 			files = (
 				2C53641F2E5834FF0020A84B /* HealthTracker.xcdatamodeld in Sources */,
 				2C53641C2E5834FF0020A84B /* Persistence.swift in Sources */,
+				2C5364572E58460F0020A84B /* DashboardView.swift in Sources */,
 				2C5364162E5834FB0020A84B /* HealthTrackerApp.swift in Sources */,
 				2C5364552E583B650020A84B /* DailyMetrics.swift in Sources */,
+				2C5364592E58485F0020A84B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
