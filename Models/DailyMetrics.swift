@@ -18,7 +18,6 @@ struct DailyMetrics {
     let manuallyEntered: Set<MetricType>
     let estimatedFields: Set<MetricType>
     let lastUpdated: Date
-    
     enum MetricType: String, CaseIterable {
         case steps, sleep, screenTime
     }
@@ -44,5 +43,15 @@ struct DailyMetrics {
         )
     }
     
-    // MARK: - Sample
+    // MARK: - Sample Data (for testing permissions)
+    static let sampleToday = DailyMetrics(
+        id: UUID(),
+        date: Date(),
+        steps: 0, // Will be populated from HealthKit if permission granted
+        sleepHours: 0.0, // Will be populated from HealthKit if permission granted
+        screenTimeMinutes: 0,
+        manuallyEntered: [],
+        estimatedFields: [],
+        lastUpdated: Date()
+    )
 }

@@ -21,10 +21,10 @@ struct MainTabView: View {
                     Label("Social", systemImage: "person.2.fill")
                 }
             
-            Text("Profile")
-                .tabItem {
-                    Label("Profile", systemImage: "person.fill")
-                }
+            HealthPermissionsView()
+            .tabItem {
+                Label("Settings", systemImage: "gear")
+            }
         }
     }
 }

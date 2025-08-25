@@ -6,15 +6,29 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct DashboardView: View {
+    @StateObject private var healthManager =
+HealthDataManager()
     var body: some View {
         VStack {
             Text("HealthTracker")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Text("Ni Hao")
-            // ... rest of content stays the same
+            Button("Test Data Fetch") {
+                Task {
+                    do {
+                        let metrics = try await
+            healthManager.fetchTodaysMetrics()
+                        print("SUCCESS: Steps: \(metrics.steps), Sleep:             \(metrics.sleepHours)")
+                    } catch {
+                        print("ERROR: \(error)")
+                    }
+                }
+            }
+
         }
         .padding()
         .navigationTitle("Dashboard")
